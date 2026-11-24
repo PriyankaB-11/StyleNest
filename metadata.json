@@ -1,0 +1,6 @@
+{
+  "name": "StyleNest",
+  "description": "Discover Your Style. Define Your Story. Contemporary luxury fashion crafted with enduring materials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

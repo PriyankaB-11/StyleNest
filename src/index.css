@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color Palette */
+  --color-primary: #1C1B1A;
+  --color-on-primary: #FFFFFF;
+  --color-primary-container: #31302F;
+  --color-on-primary-container: #F5F3F0;
+  --color-secondary: #6C5B4D;
+  --color-on-secondary: #FFFFFF;
+  --color-secondary-container: #F2DCCA;
+  --color-on-secondary-container: #534437;
+  --color-tertiary: #8C7A6B;
+  --color-on-tertiary: #131313;
+  --color-background: #FBF9F6;
+  --color-on-background: #1B1C1A;
+  --color-surface: #FBF9F6;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-low: #F5F3F0;
+  --color-surface-container: #EFEEEB;
+  --color-surface-container-high: #EAE8E5;
+  --color-surface-container-highest: #E4E2DF;
+  --color-surface-variant: #E9E1D8;
+  --color-on-surface: #1B1C1A;
+  --color-on-surface-variant: #4A4640;
+  --color-outline: #7B766F;
+  --color-outline-variant: #CCC6BD;
+  --color-inverse-surface: #1C1B1A;
+  --color-inverse-on-surface: #F5F3F0;
+  --color-success: #2E5A44;
+  --color-on-success: #FFFFFF;
+  --color-error: #BA1A1A;
+  --color-on-error: #FFFFFF;
+  --color-error-container: #FFDAD6;
+  --color-on-error-container: #93000A;
+
+  /* Typography */
+  --font-display: "Crimson Pro", Georgia, serif;
+  --font-headline: "Crimson Pro", Georgia, serif;
+  --font-title: "Commissioner", sans-serif;
+  --font-body: "Commissioner", sans-serif;
+  --font-label: "Commissioner", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+
+  /* Type Scale */
+  --text-display-lg: 4rem;
+  --text-display-lg--line-height: 4.25rem;
+  --text-display-lg--letter-spacing: -1.5px;
+
+  --text-display-lg-mobile: 2rem;
+  --text-display-lg-mobile--line-height: 2.25rem;
+  --text-display-lg-mobile--letter-spacing: -0.75px;
+
+  --text-display-md: 3rem;
+  --text-display-md--line-height: 3.375rem;
+  --text-display-md--letter-spacing: -1px;
+
+  --text-display-md-mobile: 1.875rem;
+  --text-display-md-mobile--line-height: 2.125rem;
+  --text-display-md-mobile--letter-spacing: -0.5px;
+
+  --text-headline-lg: 2.25rem;
+  --text-headline-lg--line-height: 2.625rem;
+  --text-headline-lg--letter-spacing: -0.5px;
+
+  --text-headline-lg-mobile: 1.625rem;
+  --text-headline-lg-mobile--line-height: 2rem;
+  --text-headline-lg-mobile--letter-spacing: -0.25px;
+
+  --text-headline-md: 1.75rem;
+  --text-headline-md--line-height: 2.125rem;
+  --text-headline-md--letter-spacing: -0.25px;
+
+  --text-headline-sm: 1.375rem;
+  --text-headline-sm--line-height: 1.75rem;
+  --text-headline-sm--letter-spacing: 0px;
+
+  --text-title-lg: 1.125rem;
+  --text-title-lg--line-height: 1.5rem;
+
+  --text-title-md: 1rem;
+  --text-title-md--line-height: 1.375rem;
+
+  --text-body-lg: 1rem;
+  --text-body-lg--line-height: 1.625rem;
+
+  --text-body-md: 0.875rem;
+  --text-body-md--line-height: 1.375rem;
+
+  --text-body-sm: 0.75rem;
+  --text-body-sm--line-height: 1.125rem;
+  --text-body-sm--letter-spacing: 0.1px;
+
+  --text-label-lg: 0.875rem;
+  --text-label-lg--line-height: 1.25rem;
+  --text-label-lg--letter-spacing: 0.5px;
+
+  --text-label-md: 0.75rem;
+  --text-label-md--line-height: 1rem;
+  --text-label-md--letter-spacing: 0.75px;
+
+  --text-label-sm: 0.75rem;
+  --text-label-sm--line-height: 1rem;
+  --text-label-sm--letter-spacing: 1px;
+
+  --text-mono-md: 0.8125rem;
+  --text-mono-md--line-height: 1.125rem;
+
+  /* Transition Tokens */
+  --transition-duration-state-change: 150ms;
+  --transition-duration-image-zoom: 450ms;
+  --transition-duration-surface-enter: 280ms;
+
+  --ease-state-change: ease-out;
+  --ease-image-zoom: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-surface-enter: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+  }
+
+  button:not(:disabled),
+  a[href] {
+    cursor: pointer;
+  }
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1 !important;
+  box-sizing: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+}
